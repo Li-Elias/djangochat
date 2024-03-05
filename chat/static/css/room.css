@@ -1,0 +1,82 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#2C4C3B, #6F957C);
+}
+
+.image {
+    width: 10%;
+    height: 10%;
+    display: block;
+    margin-left: 0.1%;
+    margin-top: 2%;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,.6));
+}
+
+.text {
+    position: absolute;
+    left: 10%;
+    top: 6%;
+    color: #fff;
+    text-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.chat-box {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    height: 80%;
+    max-height: 80%;
+    width: 95%;
+    max-width: 95%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.submit-box {
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    font-size: 30px;
+}
+
+input[type=text] {
+    width: 95%;
+    border-radius: 2px;
+}
+
+input[type=submit] {
+    float: right;
+    margin-left: 10px;
+    border-bottom: none;
+}
+
+input[type=submit]:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.message {
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#other-user {
+    text-align: right;
+    background: rgba(0,0,0,0.3);
+}

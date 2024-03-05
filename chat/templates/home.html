@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+        <title>djangochat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <img src="{% static 'images/django-logo.png' %}" class="image"/>
+        </div>
+
+        <div class="login-box">
+            <h2>Enter Chatroom</h2>
+            <form method="POST" action="home_submit">
+                {% csrf_token %}
+                <div class="user-box">
+                    <input type="text" name="room_name" id="room_name" required="">
+                    <label>Room</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="username" id="username" required="">
+                    <label>Username</label>
+                </div>
+                <a>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input class="submit-box" type="submit" value="Enter Room">
+                </a>
+            </form>
+        </div>
+
+    </body>
+</html>
